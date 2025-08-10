@@ -231,7 +231,7 @@ flowchart TD
     MaintainFeeding --> PreviousSchedule[4-6週のスケジュールを継続]
     
     Sleep7 --> DaySchedule[日中のスケジュール]
-    DaySchedule --> Rule1[/7:00-19:00の間/<br/>昼寝は4時間半以内]
+    DaySchedule --> Rule1["7:00-19:00の間<br/>昼寝は4時間半以内"]
     
     Rule1 --> Decision2{夜眠らない？}
     Decision2 -->|はい| ReduceNap[昼寝の量を減らす]
@@ -252,7 +252,7 @@ flowchart TD
     Decision4 -->|はい| LastResort[最終手段として授乳]
     Decision4 -->|いいえ| Success
     
-    LastResort --> Note1[/起きることが習慣に<br/>ならないよう注意/]
+    LastResort --> Note1["起きることが習慣に<br/>ならないよう注意"]
     Note1 --> Success
     
     MaintainCurrent --> Monitor[継続的に観察]
